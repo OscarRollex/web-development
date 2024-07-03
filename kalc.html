@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="kalc.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+        <section>
+            <button class="btn" onclick="clearDisplay()">AC</button>
+        </section>
+        <section>
+            <button class="btn" onclick="deleteLast()">Del</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('%')">%</button>
+        </section>
+        <section>
+            <button class="btn operator" onclick="appendCharacter('/')">/</button>
+        </section>
+
+        <section>
+            <button class="btn" onclick="appendCharacter('7')">7</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('8')">8</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('9')">9</button>
+        </section>
+        <section>
+            <button class="btn operator" onclick="appendCharacter('*')">*</button>
+        </section>
+
+        <section>
+            <button class="btn" onclick="appendCharacter('4')">4</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('5')">5</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('6')">6</button>
+        </section>
+        <section>
+            <button class="btn operator" onclick="appendCharacter('-')">-</button>
+        </section>
+
+        <section>
+            <button class="btn" onclick="appendCharacter('1')">1</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('2')">2</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('3')">3</button>
+        </section>
+        <section>
+            <button class="btn operator" onclick="appendCharacter('+')">+</button>
+        </section>
+
+        <section>
+            <button class="btn" onclick="appendCharacter('0')">0</button>
+        </section>
+        <section>
+            <button class="btn" onclick="appendCharacter('.')">.</button>
+        </section>
+        <section>
+            <button class="btn equal" onclick="calculateResult()">=</button>
+        </section>
+        </div>
+    </div>
+    
+
+    <script src="kalc.js"></script>
+</body>
+</html>
