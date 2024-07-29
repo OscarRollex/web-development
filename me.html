@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body bgcolor="green">
+        
+        <h1>Form Creation</h1>
+        <form action="/mien">
+            <p>
+            <label for="Username">Enter your Username</label>
+            <input id="Username" type="text" placeholder="User name" name="Username">
+            </p>
+            <p>
+            <label for="Password">Enter your Password</label>
+            <input id="Password" type="Password" placeholder="Enter your password">
+            </p>
+            <p>
+            <label for="Color">Fill your favourite color</label>
+            <input id="color" type="Color">
+            </p>
+            <p>
+            <label for="Number">Enter Number</label>
+            <input id="Number" type="Number">
+            </p>
+            <button>Submit</button>
+            <button type="button">Submit</button>
+        </form>
+        <h1>Search Google</h1>
+        <form action="https://www.waze.com/live-map/directions/ke/kiambu-county/ruiru/kihunguro">
+            <input type="Text" name="place">
+            <button>Search Google</button>
+        </form>
+        <h2>More Information</h2>
+        <form action="/tala">
+            <input type="checkbox" name="Accept" id="Accept" checked>
+            <label for="Accept">I accept all terms</label>
+            <p>
+                <h2>Option one</h2>
+                <label for="Xl">XL</label>
+                <input type="radio" name="size" id="Xl" value="Xl">
+                <h3>Option two</h3>
+                <label for="Xs">XS</label>
+                <input type="radio" name="size" id="Xs" value="Xs">
+                <h4>Option three</h4>
+                <label for="Vs">VS</label>
+                <input type="radio" name="size" id="Vs" value="Vs">
+            </p>
+            <p>
+                <label for="Country">Please select your country</label>
+                <select name="country" id="country">
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Rwanda">Rwanda</option>
+                </select>
+            </p>
+            <p>
+                <label for="rainfall">Amount of rainfall</label>
+                <input type="range" id="rainfall" min="10" max="100" step="3" name="rainfall">
+            </p>
+            <p>
+                <label for="Information">More Information?</label>
+                <textarea id="Information" rows="5" cols="60" name="information" placeholder="Type additional information here"></textarea>
+            </p>
+            <h5>Validation</h5>
+            <form action="/toll">
+                <label for="first">Enter your first name</label>
+                <input type="text" name="first" id="first" required>
+                <p>
+                    <label for="username">Enter username</label>
+                    <input type="text" id="username" name="username" minlength="8" maxlength="30">
+                </p>
+                <p>
+                    <label for="email">Enter yiur email</label>
+                    <input type="email" required>
+                </p>
+            
+            <button>Submit</button>
+        </form>
+        <a href="epl.html">Fixture</a>
+    </body>
+</html>
